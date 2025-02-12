@@ -4,8 +4,6 @@ Client/node_modules/
 # tmp/ is used for temporary files and backups
 tmp/
 
-tools.txt
-
 # Logs
 logs
 *.log
@@ -140,3 +138,6 @@ dist
 # macOS system file, stores Finder metadata, not needed in the repository
 .DS_Store
 
+# private project files
+*.jpg
+tools.txt

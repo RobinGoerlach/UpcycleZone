@@ -2,7 +2,7 @@ import express from "express";
 import dotenv from "dotenv";
 dotenv.config();
 import productRoutes from "./routes/productRoutes.js";
-import productRoutes from "./middleware/errorMiddleware.js";
+import { notFound, errorHandler } from "./middleware/errorMiddleware.js";
 import connectDB from "./config/db.js";
 connectDB();
 

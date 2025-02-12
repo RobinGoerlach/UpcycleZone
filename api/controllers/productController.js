@@ -22,4 +22,4 @@ const getProductById = asyncHandler(async (req, res) => {
   throw new Error("Product not found");
 });
 
-export { getProductById, getProductById };
+export { getProducts, getProductById };
