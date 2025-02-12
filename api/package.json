@@ -1,0 +1,27 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node --watch index.js",
+    "server": "nodemon index.js",
+    "client": "npm start --prefix ../app index.js",
+    "both": "concurrently \"npm run server\" \"npm run client\"",
+    "data:import": "node seeder.js",
+    "data:destroy": "node seeder.js -d"
+  },
+  "keywords": [],
+  "author": "WD-57 by Anoj T.",
+  "license": "MIT",
+  "description": "Upcycle eCommerce application build with MERN stack",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "colors": "^1.4.0",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mongoose": "^8.10.0",
+    "nodemon": "^3.1.9"
+  }
+}
